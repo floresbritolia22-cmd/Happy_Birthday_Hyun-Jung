@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8e8e4">
+  <meta name="description" content="A little birthday garden made with love for Hwang Hyun-jung.">
+  <title>Happy Birthday ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="A Little Birthday Garden home">
+      <span class="brand-flower">✿</span><span>A little gift</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#game" data-i18n="navGame">Game</a>
+      <a href="#letter" data-i18n="navLetter">A little letter</a>
+      <a href="#gallery" data-i18n="navGallery">Gallery</a>
+      </nav>
+    <div class="language-picker">
+      <label for="languageSelect" class="language-label" data-i18n="languageLabel">Language   </label>
+      <select id="languageSelect" name="language" aria-label="Choose language">
+        <option value="en" selected>English</option>
+        <option value="es">Español</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy float-card">
+        <p class="eyebrow"><span>✦</span> <span data-i18n="eyebrow">A tiny celebration made just for you</span> <span>✦</span></p>
+        <h1 data-i18n-html="heroTitle">Happy 22nd Birthday,<br><em>Hyun-jung!</em></h1>
+        <p class="hero-text" data-i18n="heroText">A little corner of the internet filled with flowers, wishes, and 22 little cakes waiting to be collected</p>
+        
+<div class="hero-actions">
+  <a class="button button-primary button-letter"
+     href="#letter"
+     data-i18n="heroLink">
+    ♡ Read a little letter
+  </a>
+
+  <a class="button button-soft"
+     href="#game"
+     data-i18n="heroButton">
+    Collect your cakes ✿
+  </a>
+</div>
+      </div>
+      <div class="hero-art float-card" data-float="soft">
+        <div class="art-sparkle sparkle-a">✦</div><div class="art-sparkle sparkle-b">✧</div>
+        <div class="photo-frame hero-photo">
+          <!-- Replace images/your-favorite-photo.jpg with your own image file. -->
+          <img src="images/hero.jpg" alt="Favorite photo of Hyun-jung" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="photo-placeholder"><span class="placeholder-flower">✿</span><strong data-i18n="photoPlaceholder">Y</strong><small>images/your-favorite-photo.jpg</small></div>
+        </div>
+        <div class="sticker sticker-top">22 <span>♡</span></div>
+        <div class="sticker sticker-bottom"><span>✿</span> birthday bloom</div>
+        <span class="floating-doodle doodle-heart">♥</span>
+        <span class="floating-doodle doodle-star">✦</span>
+      </div>
+      <div class="hero-bottom-line"><span>♡</span> <span data-i18n="scrollHint">♡</span> <span>♡</span></div>
+    </section>
+
+    <section class="wish-strip section-wrap">
+      <article class="wish-chip float-card"><span class="chip-icon">☼</span><div><strong data-i18n="wishOneTitle">A day full of joy</strong><p data-i18n="wishOneText">May your smile find a hundred reasons to appear.</p></div></article>
+      <article class="wish-chip float-card"><span class="chip-icon">✿</span><div><strong data-i18n="wishTwoTitle">Room to bloom</strong><p data-i18n="wishTwoText">May life give you time to grow at your own pace.</p></div></article>
+      <article class="wish-chip float-card"><span class="chip-icon">♡</span><div><strong data-i18n="wishThreeTitle">Always appreciated</strong><p data-i18n="wishThreeText">Your work brings little moments of happiness to others.</p></div></article>
+    </section>
+
+<section class="letter-section section-wrap" id="letter">
+      <div class="letter-decoration" aria-hidden="true">❦</div>
+      <article class="letter-card float-card">
+        <div class="letter-top"><span>♡</span><span data-i18n="letterEyebrow">A note from afar</span><span>♡</span></div>
+        <h2 data-i18n-html="letterTitle">Dear <em>Hyun-jung,</em></h2>
+        <div class="letter-body">
+          <p data-i18n="letterP1">I’m so happy to celebrate another year of your life with you, even from afar. There’s something special about connecting with someone through the things they create, and I’m grateful your work has brought so many little moments of happiness.</p>
+          <p data-i18n="letterP2">Thank you for the time, effort, and heart you put into what you do. Please know that the work behind the scenes is seen and appreciated, too. It’s lovely to watch you grow, try new things, and take on new challenges.</p>
+          <p data-i18n="letterP3">I hope today brings you laughter, delicious food, warm hugs, and the biggest smiles. In this new chapter, may you feel free to take your time, learn, change, make mistakes, and enjoy wherever life takes you. I hope you collect memories that will make your heart feel warm for years to come.</p>
+          <p data-i18n="letterP4">I made this little gift while learning something new in my studies. This time, I wanted to try something different; it felt meaningful to create something with my own hands using something that is also beginning to become part of my life. I hope you can feel the sincerity and care I put into it. Thank you for sharing your talent and time with the people who support you.</p>
+          <p data-i18n="letterP5">Please take good care of yourself, and may the year ahead give you countless reasons to smile. I’ll be cheering you on and wishing you happiness in everything you do.</p>
+        </div>
+        <div class="letter-signoff"><span data-i18n="signoff">With lots of warmth and birthday wishes,</span><strong>@suvmmie ♡</strong></div>
+        <div class="letter-stamp">MADE<br>WITH ♡</div>
+      </article>
+    </section>
+
+    
+    <section class="game-section section-wrap" id="game" aria-label="Birthday Catcher game section">
+      <iframe class="catcher-embed" src="birthday-catcher/index.html" title="Birthday Catcher — English, Spanish and Korean" loading="lazy" allow="fullscreen" scrolling="no"></iframe>
+    </section>
+
+<section class="gallery-section section-wrap" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow"><span>✦</span> <span data-i18n="galleryEyebrow">Little moments</span> <span>✦</span></p>
+        <h2 data-i18n="galleryTitle">Little moments,<em>lovely memories</em></h2>
+        <p data-i18n="galleryIntro">✦</p>
+      </div>
+      
+<div class="gallery-grid">
+  <figure class="gallery-card gallery-large float-card">
+    <div class="gallery-image">
+      <video
+        src="images/hyun.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="Favorite Hyun-jung video one"
+      ></video>
+    </div>
+    <figcaption data-i18n="galleryCaption1">
+     little moments worth keeping ♡
+    </figcaption>
+  </figure>
+
+  <figure class="gallery-card float-card">
+    <div class="gallery-image">
+      <video
+        src="images/gallery-video-2.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="Favorite Hyun-jung video two"
+      ></video>
+    </div>
+    <figcaption data-i18n="galleryCaption2">
+      a smile that brightens the day
+    </figcaption>
+  </figure>
+
+  <figure class="gallery-card float-card">
+    <div class="gallery-image">
+      <video
+        src="images/gallery-video-3.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="Favorite Hyun-jung video three"
+      ></video>
+    </div>
+    <figcaption data-i18n="galleryCaption3">
+      a lovely memory in bloom ♡
+    </figcaption>
+  </figure>
+</div>
+    </section>
+
+    <section class="final-banner section-wrap">
+      <div class="final-card float-card">
+        <span class="final-sparkle">✦</span>
+        <p class="eyebrow" data-i18n="finalEyebrow">one more wish before you go</p>
+        <h2 data-i18n-html="finalTitle">May your next chapter<br><em>be full of lovely things.</em></h2>
+        <p data-i18n="finalText">Happy 22nd birthday, Hyun-jung. Keep blooming, in your own beautiful way.</p>
+        <a href="#home" class="button button-primary" data-i18n="backToTop">Back</a>
+        <span class="final-flower">✿</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home">✿ A little gift</a>
+    <p data-i18n="footerText">A small handmade birthday gift for Hwang Hyun-jung.</p>
+    <div class="footer-stars">✦　♡　✧　♡　✦</div>
+    <small>made with love · @suvmmie </small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

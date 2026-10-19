@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8e6e9">
+  <title>Birthday Catcher ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="birthday-game-section" id="birthday-catcher">
+    <div class="game-heading">
+      <p class="eyebrow" data-i18n="eyebrow">A LITTLE BIRTHDAY GAME</p>
+      <h2>Birthday Catcher <span>♡</span></h2>
+    </div>
+
+    <div class="game-frame">
+      <div class="game-topbar">
+        <div class="score" id="score"><span data-i18n="score">Cakes</span>: <strong>00/22</strong></div>
+        <div class="topbar-right">
+          <div class="lives" id="lives" aria-label="Lives">♥ ♥ ♥ ♥</div>
+          <label class="language-picker">
+            <span class="sr-only" data-i18n="languageLabel">Language</span>
+            <select id="languageSelect" aria-label="Language">
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+              <option value="ko">한국어</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="play-area" id="playArea">
+        <canvas id="gameCanvas" width="800" height="450" aria-label="Birthday Catcher game"></canvas>
+
+        <div class="start-screen" id="startScreen">
+          <div class="instruction-sheet">
+            <div class="sheet-flower">✿</div>
+            <p class="sheet-kicker" data-i18n="sheetKicker">A LITTLE BIRTHDAY CHALLENGE</p>
+            <h3 data-i18n="sheetTitle">Birthday Catcher</h3>
+            <p class="sheet-intro" data-i18n="sheetIntro">A tiny birthday mission, made just for you.</p>
+            <div class="rule"><span>🎂</span><p><b data-i18n="ruleCakeTitle">Catch the cakes</b><br><span data-i18n="ruleCakeText">Each cake gives you 1 point.</span></p></div>
+            <div class="rule"><span>💄</span><p><b data-i18n="ruleAvoidTitle">Avoid everyday items</b><br><span data-i18n="ruleAvoidText">Touching them costs one heart.</span></p></div>
+            <div class="rule"><span>🌸</span><p><b data-i18n="ruleGoalTitle">Collect all 22 cakes</b><br><span data-i18n="ruleGoalText">Flowers and sparkles appear every 5 cakes.</span></p></div>
+            <p class="controls-note" data-i18n="controls">Use ← → or A / D. On mobile, use the buttons or drag the character.</p>
+            <button id="startButton" data-i18n="startButton">Let's play ♡</button>
+            <span class="sheet-foot" data-i18n="sheetFoot">good luck!</span>
+          </div>
+        </div>
+
+        <div class="win-screen hidden" id="winScreen">
+          <div class="win-sparkles">✧ ✿ ✧</div>
+          <h3 data-i18n="winTitle">Happy 22nd Birthday!</h3>
+          <p data-i18n="winText">Wishing you a day full of lovely little things. ♡</p>
+          <button id="replayButton" data-i18n="replayButton">Play again</button>
+        </div>
+
+        <div class="game-over hidden" id="gameOver">
+          <h3 data-i18n="loseTitle">One more try? ♡</h3>
+          <p data-i18n="loseText">Your hearts ran out, but there are still cakes to catch.</p>
+          <button id="retryButton" data-i18n="retryButton">Try again</button>
+        </div>
+      </div>
+
+      <div class="game-bottom">
+        <span data-i18n="keyboardHint">← → or A / D</span>
+        <span data-i18n="dragHint">You can also drag the character</span>
+      </div>
+      <div class="touch-controls">
+        <button id="leftButton" aria-label="Move left">←</button>
+        <span data-i18n="move">MOVE</span>
+        <button id="rightButton" aria-label="Move right">→</button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
